@@ -8,9 +8,11 @@ New shoutouts to:
 - DonutScout
 - BonziCITIZEN
 - and so much more
-- No shoutouts for all assholes because they are responible for contributing to the hell hole named bonziworld.org
+- No shoutouts for bw.org assholes because they are responible for contributing to the hell hole named bonziworld.org
 
 This shitty server i made should be used by bonziworld.com users, i hope.
+
+I am sorry if this server doesn't have rules. I want users to be careful.
 
 ## Dependencies
 - Node.js and npm
