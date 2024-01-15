@@ -1,4 +1,4 @@
-const Winston = require('winston');
+const Winston = require('Winston');
 const path = require('path');
 const settings = require("./settings.json");
 const fs = require('fs-extra');
@@ -21,7 +21,7 @@ exports.init = function() {
         if (settings.consoleOutput)
             transports.push(new (Winston.transports.Console)())
         
-        loggers[key] =  Winston.createLogger({
+        loggers[key] =  new (Winston.Logger)({
             transports: transports
         });
     }
