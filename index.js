@@ -30,11 +30,12 @@ try {
 
 // Load settings into memory
 const settings = require("./settings.json");
+
 // Setup basic express server
 var express = require('express');
 var app = express();
 if (settings.express.serveStatic)
-	app.use(express.static('./build/www'));
+	app.use(express.static('../build/www'));
 var server = require('http').createServer(app);
 
 // Init socket.io
@@ -57,12 +58,12 @@ Ban.init();
 
 // Start actually listening
 server.listen(port, function () {
-  console.log(
-    " Welcome to BonziWORLD!\n",
-    "Time to meme!\n",
-    "----------------------\n",
-    "Server listening at port " + port
-  );
+	console.log(
+		" Welcome to BonziWORLD!\n",
+		"Time to meme!\n",
+		"----------------------\n",
+		"Server listening at port " + port
+	);
 });
 app.use(express.static(__dirname + '/public'));
 
