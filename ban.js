@@ -63,7 +63,8 @@ exports.handleBan = function(socket) {
 	}
 
 	log.access.log('info', 'ban', {
-		ip: ip
+		ip: ip,
+		guid: socket.guid,
 	});
 	socket.emit('ban', {
 		reason: bans[ip].reason,
