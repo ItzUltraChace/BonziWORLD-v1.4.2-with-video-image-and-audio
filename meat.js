@@ -146,6 +146,20 @@ let userCommands = {
             vid: vid
         });
     },
+	"video": function(vidRaw){
+        var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+        this.room.emit("video", {
+            guid: this.guid,
+            vid: vid
+        });
+    },
+	"image": function(vidRaw){
+        var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+        this.room.emit("image", {
+            guid: this.guid,
+            vid: vid
+        });
+    },
     "backflip": function(swag) {
         this.room.emit("backflip", {
             guid: this.guid,
